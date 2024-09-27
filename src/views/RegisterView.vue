@@ -24,7 +24,9 @@ export default {
     methods: {
         async register() {
             try {
-                const userCredential = await createUserWithEmailAndPassword(auth, this.email, this.password)
+                await createUserWithEmailAndPassword(auth, this.email, this.password)
+                const redirectPath = this.$route.query.redirect || '/';
+                this.$router.push(redirectPath);
                 this.email = '',
                 this.password = ''
             } catch (error) {

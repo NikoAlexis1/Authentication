@@ -24,7 +24,7 @@ export default {
         async login() {
             try {
                 await signInWithEmailAndPassword(auth, this.email, this.password)
-                const redirectPath = this.$route.query.redirect || '/home';
+                const redirectPath = this.$route.query.redirect || '/';
                 this.$router.push(redirectPath);
             } catch (error) {
                 alert('Error al iniciar sesion'+ error.message);
