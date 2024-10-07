@@ -2,6 +2,11 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
+
+## Url de la pagina
+Project Console: https://console.firebase.google.com/project/authentication-ef6df/overview
+Hosting URL: https://authentication-ef6df.web.app
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
